@@ -66,7 +66,7 @@ export default function mml2smf (mml, opts) {
 
     let velocity = 100
 
-    let q = 6
+    let q = 8
     let keyShift = 0
 
     let p = 0
