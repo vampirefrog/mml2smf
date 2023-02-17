@@ -188,11 +188,11 @@ function peg$parse(input, options) {
                   number: +number
               };
           },
-      peg$c39 = "<",
-      peg$c40 = peg$literalExpectation("<", false),
+      peg$c39 = ">",
+      peg$c40 = peg$literalExpectation(">", false),
       peg$c41 = function() { return { command: "octave_up" }; },
-      peg$c42 = ">",
-      peg$c43 = peg$literalExpectation(">", false),
+      peg$c42 = "<",
+      peg$c43 = peg$literalExpectation("<", false),
       peg$c44 = function() { return { command: "octave_down" }; },
       peg$c45 = "l",
       peg$c46 = peg$literalExpectation("l", false),
@@ -1251,7 +1251,7 @@ function peg$parse(input, options) {
     s0 = peg$currPos;
     s1 = peg$parse_();
     if (s1 !== peg$FAILED) {
-      if (input.charCodeAt(peg$currPos) === 60) {
+      if (input.charCodeAt(peg$currPos) === 62) {
         s2 = peg$c39;
         peg$currPos++;
       } else {
@@ -1286,7 +1286,7 @@ function peg$parse(input, options) {
     s0 = peg$currPos;
     s1 = peg$parse_();
     if (s1 !== peg$FAILED) {
-      if (input.charCodeAt(peg$currPos) === 62) {
+      if (input.charCodeAt(peg$currPos) === 60) {
         s2 = peg$c42;
         peg$currPos++;
       } else {

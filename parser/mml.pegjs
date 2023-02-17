@@ -44,8 +44,8 @@ octave
         };
     }
 
-octave_up = _ "<" _ { return { command: "octave_up" }; }
-octave_down = _ ">" _ { return { command: "octave_down" }; }
+octave_up = _ ">" _ { return { command: "octave_up" }; }
+octave_down = _ "<" _ { return { command: "octave_down" }; }
 
 note_length
     = _ "l" _ length:$([0-9]+) _ dots:"."* _
